@@ -34,7 +34,7 @@ class NavigationBarMobile extends StatelessWidget {
           focusColor: Colors.transparent,
           hoverColor: Colors.transparent,
           onTap: () {
-            Get.find<NavigationService>().navigateTo(PagesRoute.splashScreen);
+            Get.toNamed(PagesRoute.splashScreen);
           },
           child: Text(
             title!.toUpperCase(),
@@ -87,7 +87,7 @@ class NavigationBarTablet extends StatelessWidget {
           focusColor: Colors.transparent,
           hoverColor: Colors.transparent,
           onTap: () {
-            Get.find<NavigationService>().navigateTo(PagesRoute.splashScreen);
+            Get.toNamed(PagesRoute.splashScreen);
           },
           child: Text(
             title!.toUpperCase(),
@@ -136,7 +136,7 @@ class NavigationBarDesktop extends StatelessWidget {
           focusColor: Colors.transparent,
           hoverColor: Colors.transparent,
           onTap: () {
-            Get.find<NavigationService>().navigateTo(PagesRoute.splashScreen);
+            Get.toNamed(PagesRoute.splashScreen);
           },
           child: Text(
             'Wedding Hub'.toUpperCase(),

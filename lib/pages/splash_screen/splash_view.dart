@@ -18,6 +18,6 @@ class SplashScreenView extends GetView<PagesController> {
   Future<void> loading() async {
     await Future.delayed(const Duration(seconds: 2));
     controller.currentPage.value = PagesRoute.home;
-    Get.find<NavigationService>().navigateTo(controller.currentPage.value);
+    Get.toNamed(PagesRoute.home);
   }
 }

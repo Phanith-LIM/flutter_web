@@ -35,7 +35,7 @@ class ErrorDesktop extends StatelessWidget {
                 overlayColor: MaterialStateProperty.all(kSecondary.withOpacity(0.3)),
               ),
               onPressed: () {
-                Get.find<NavigationService>().navigateTo(PagesRoute.home);
+                Get.toNamed(PagesRoute.splashScreen);
               },
               child: const Text('Back Home', style: TextStyle(color: Colors.white, fontSize: 16)),
             ).animate().scale(

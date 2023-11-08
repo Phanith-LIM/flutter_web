@@ -21,14 +21,14 @@ class PagesView extends GetView<PagesController> {
                 DrawerItem(
                   onTap: () {
                     controller.currentPage.value = PagesRoute.home;
-                    Get.find<NavigationService>().navigateTo(PagesRoute.home);
+                    Get.toNamed(PagesRoute.home);
                   },
                   label: 'Home'.toUpperCase(),
                 ),
                 DrawerItem(
                   onTap: () {
                     controller.currentPage.value = PagesRoute.aboutUs;
-                    Get.find<NavigationService>().navigateTo(PagesRoute.aboutUs);
+                    Get.toNamed(PagesRoute.aboutUs);
                   },
                   label: 'About Us'.toUpperCase(),
                 ),
@@ -59,7 +59,7 @@ class PagesView extends GetView<PagesController> {
                           color: controller.currentPage.value != PagesRoute.home ? kSecondary : kPrimary,
                           onPressed: () {
                             controller.currentPage.value = PagesRoute.home;
-                            Get.find<NavigationService>().navigateTo(PagesRoute.home);
+                            Get.toNamed(PagesRoute.home);
                           },
                         ),
                         const SizedBox(width: kDefaultSpace * 3,),
@@ -67,7 +67,7 @@ class PagesView extends GetView<PagesController> {
                           name: 'About Us'.toUpperCase(),
                           onPressed: () {
                             controller.currentPage.value = PagesRoute.aboutUs;
-                            Get.find<NavigationService>().navigateTo(PagesRoute.aboutUs);
+                            Get.toNamed(PagesRoute.aboutUs);
                           },
                           fontSize: 14,
                           color: controller.currentPage.value != PagesRoute.aboutUs? kSecondary : kPrimary,
