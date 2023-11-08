@@ -1,0 +1,10 @@
+export 'pages_view/pages_mobile.dart';
+export 'pages_view/pages_tablet.dart';
+export 'pages_view/pages_desktop.dart';
+export 'pages_route.dart';
+export 'pages_controller.dart';
+export 'pages_models.dart';
+export 'pages_binding.dart';
+export 'pages_view.dart';
+export 'splash_screen/xcore.dart';
+export '404/xcore.dart';
